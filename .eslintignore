@@ -1,0 +1,5 @@
+.vitepress
+coverage
+packages/**/*.less
+packages/icons/es
+packages/icons/lib

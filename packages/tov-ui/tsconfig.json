@@ -1,0 +1,8 @@
+{
+  "extends": ["../../tsconfig.json"], // 继承最外层的ts配置
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

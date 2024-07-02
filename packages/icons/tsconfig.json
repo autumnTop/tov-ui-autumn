@@ -1,0 +1,4 @@
+{
+  "extends": ["../../tsconfig.json"], // 继承最外层的ts配置
+  "include": ["./src/**/*.ts", "./src/**/*.vue"]
+}

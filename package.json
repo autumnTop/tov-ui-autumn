@@ -1,0 +1,52 @@
+{
+  "name": "my-autumn",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "prepare": "husky install",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "genColors": "esno ./scripts/gen-colors.ts",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "build:css": "esno ./scripts/css-bundle.ts"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@mistjs/eslint-config": "^1.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/less": "^3.0.6",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^8.55.0",
+    "esno": "^4.7.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "husky": "^8.0.3",
+    "jsdom": "^24.1.0",
+    "less": "^4.2.0",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8.4.38",
+    "typescript": "^5.2.2",
+    "unplugin-vue-components": "^0.27.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-tsx-resolve-types": "^0.0.2",
+    "vite-plugin-vitepress-demo": "^2.2.1",
+    "vitepress": "^1.2.3",
+    "vitest": "^1.6.0",
+    "vue-tsc": "^1.8.25"
+  },
+  "lint-staged": {
+    "./**/*.{js,ts,vue,tsx,jsx,css,json}": [
+      "eslint --fix"
+    ]
+  }
+}

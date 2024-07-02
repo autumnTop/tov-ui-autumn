@@ -1,0 +1,30 @@
+@import "../../style/index.less";
+
+.tov-table {
+  &-cell {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  &-header {
+    box-sizing: border-box;
+    &-cell {
+      position: relative;
+      background: #fafafa;
+
+      &:not(:last-child) {
+        &::before {
+          content: '';
+          position:absolute;
+          top: 50%;
+          right:0;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 1.5em;
+          background :#f0f0f0;
+        }
+      }
+
+
+    }
+  }
+}
